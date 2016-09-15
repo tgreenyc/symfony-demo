@@ -12,6 +12,9 @@
     },
     "require": {
         "php"                                  : ">=5.5.9",
+        "ext-mysql"                            : "*",
+        "ext-mysqli"                           : "*",
+        "ext-pdo_mysql"                        : "*",
         "ext-pdo_sqlite"                       : "*",
         "doctrine/doctrine-bundle"             : "^1.6",
         "doctrine/doctrine-fixtures-bundle"    : "^2.2",

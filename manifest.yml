@@ -15,5 +15,5 @@ applications:
     PHP_BINARY: /home/vcap/app/.bp-config/bin/php
 
     # http_proxy: ...
-    # BP_DEBUG: "True"
+    BP_DEBUG: "True"
 
