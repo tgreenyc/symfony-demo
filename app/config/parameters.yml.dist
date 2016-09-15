@@ -14,10 +14,10 @@ parameters:
     #
     # Furthermore, you must remove or comment out the "doctrine" section from config_dev.yml regarding SQLite!
     
-    database_host:  us-cdbr-iron-east-04.cleardb.net
-    database_name:  ad_c0d0e6a3c85afbd
-    database_user:  b84192f18d3656
-    database_password:  cf1ca254
+    #database_host:  us-cdbr-iron-east-04.cleardb.net
+    #database_name:  ad_c0d0e6a3c85afbd
+    #database_user:  b84192f18d3656
+    #database_password:  cf1ca254
     # You can even create the database and load the sample data from the command line:
     #
     # $ cd symfony-demo/

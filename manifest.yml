@@ -8,6 +8,7 @@ applications:
   # You can read this out with your APP!
   # buildpack: php_buildpack_new
   buildpack: https://github.com/cloudfoundry/php-buildpack.git
+  services: [mysql]
   env:
     SYMFONY_ENV: prod
     DOCUMENT_ROOT: web
@@ -16,4 +17,4 @@ applications:
 
     # http_proxy: ...
     BP_DEBUG: "True"
-
+    

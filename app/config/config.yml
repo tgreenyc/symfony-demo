@@ -8,7 +8,7 @@ imports:
     - { resource: parameters.yml }
     - { resource: security.yml }
     - { resource: services.yml }
-
+    - { resource: parameters_production.php }
 # These are the configuration parameters that define the application's behavior
 # and which are independent from the underlying technical infrastructure
 # See http://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
