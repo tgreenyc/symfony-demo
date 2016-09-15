@@ -12,6 +12,9 @@
     },
     "require": {
         "php"                                  : ">=5.5.9",
+        "ext-mysql"                            : "*",
+        "ext-mysqli"                           : "*",
+        "ext-pdo_mysql"                        : "*",
         "ext-pdo_sqlite"                       : "*",
         "doctrine/doctrine-bundle"             : "^1.6",
         "doctrine/doctrine-fixtures-bundle"    : "^2.2",
@@ -41,7 +44,9 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
+            "php bin/console doctrine:schema:create",
+            "php bin/console doctrine:fixtures:load -n"
         ],
         "post-update-cmd": [
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
